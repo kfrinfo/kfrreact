@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: 7px;
+  
+}
+
+
+.App-profilePicture {
+  position: relative;
+  top: 50%;
+  left: 40%;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+.App-intro {
+  font-size: large;
+} 
+
+/*@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}*/
+
+.Container {
+  width: 100px;
+  height: 60px;  
+  margin: auto;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+svg {
+  width: 100px;
+  height: 60px;  
+}
+
+svg rect{
+fill: transparent;
+
+}
+
+svg rect{
+  stroke: #00BFFF;
+  stroke-width: 6;
+  transition: 1.5s;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 0;
+  animation: brush 4s linear infinite;
+}
+
+canvas {display:block;}
+
+@keyframes brush {
+  0% { stroke-dashoffset: 450; }
+ 25% { stroke-dashoffset: 225; }
+ 50% { stroke-dashoffset: 0; }
+ 75% { stroke-dashoffset: 225; }
+100% { stroke-dashoffset: 450; }
+}
