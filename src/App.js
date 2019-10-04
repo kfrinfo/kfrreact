@@ -58,7 +58,8 @@ class AppHeader extends Component {
     const body = d.getElementsByTagName('body')[0];
     const width = w.innerWidth || documentElement.clientWidth || body.clientWidth;
     console.log("state : ", width)
-    var canvas = document.body.childNodes[1].childNodes[0].childNodes[0].appendChild( document.createElement( 'canvas' ) ),
+    var appheader = document.getElementById("appheader")
+    var canvas = appheader.appendChild( document.createElement( 'canvas' ) ),
         context = canvas.getContext( '2d' );
     context.globalCompositeOperation = 'lighter';
     canvas.width = width - 50;
@@ -133,7 +134,7 @@ class AppHeader extends Component {
  
   render() {
     return (
-      <div className="App-header" ref={this.appHeader}  onLoad={this.drawAppHeader}>
+      <div className="App-header" id="appheader" ref={this.appHeader}  onLoad={this.drawAppHeader}>
         <div className="Container">
           <img src={logo} className="App-logo" alt="logo"/>
           <svg>
