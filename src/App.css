@@ -14,20 +14,21 @@
 .App-profilePicture {
   position: relative;
   top: 50%;
-  left: 40%;
-  height: 80px;
+  height: 300px;
+  opacity: 0.85;
+  transform: rotate(90deg);
 }
 
 .App-header {
-  background-color: #222;
+  text-align: center;
   height: 150px;
-  padding: 20px;
-  color: white;
+  padding: 30px;
   position: relative;
 }
 
 .App-intro {
   font-size: large;
+  color: #ffffff;
 } 
 
 /*@keyframes App-logo-spin {
@@ -55,12 +56,12 @@ fill: transparent;
 }
 
 svg rect{
-  stroke: #00BFFF;
+  stroke: rgb(255, 255, 255);
   stroke-width: 6;
   transition: 1.5s;
   stroke-dasharray: 450;
   stroke-dashoffset: 0;
-  animation: brush 4s linear infinite;
+  animation: brush 8s linear infinite;
 }
 
 canvas {display:block;}
@@ -71,4 +72,57 @@ canvas {display:block;}
  50% { stroke-dashoffset: 0; }
  75% { stroke-dashoffset: 225; }
 100% { stroke-dashoffset: 450; }
+}
+
+a {
+  color: #ffffff;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  float: right;
+  font-weight: bold;
+  font-size: x-large;
+  margin-right: 10%;
+  text-decoration:none; 
+}
+
+.header {
+  padding: 10px 16px;
+  background: rgb(1, 9, 32);
+}
+
+/* Links inside the navbar */
+/* .header button {
+  display: block;
+  color: #e6dddd;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} */
+
+/* Change background on mouse-over */
+/* .header button:hover {
+  background: rgba(231, 228, 228, 0.438);
+  color: black;
+} */
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.Resume{
+  margin-top: 50px;
 }
